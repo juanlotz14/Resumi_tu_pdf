@@ -22,9 +22,7 @@ if not API_KEY:
 elif not API_URL:
     st.error("❌ ERROR: No encuentro la API_URL en el archivo .env")
     st.stop()
-else:
-    # Si todo está bien
-    st.success(f"✅ Conectado correctamente. IP configurada: {API_URL}")
+    
 
 # --- 4. FUNCIONES DEL PROGRAMA ---
 def extraer_texto_pdf(pdf_file):
